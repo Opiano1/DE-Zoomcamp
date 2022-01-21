@@ -65,7 +65,7 @@ Terraform used the selected providers to generate the following execution plan. 
 
 Terraform will perform the following actions:
 
-  # google_bigquery_dataset.dataset will be created
+   google_bigquery_dataset.dataset will be created
   + resource "google_bigquery_dataset" "dataset" {
       + creation_time              = (known after apply)
       + dataset_id                 = "trips_data_all"
@@ -92,7 +92,7 @@ Terraform will perform the following actions:
         }
     }
 
-  # google_storage_bucket.data-lake-bucket will be created
+  google_storage_bucket.data-lake-bucket will be created
   + resource "google_storage_bucket" "data-lake-bucket" {
       + force_destroy               = true
       + id                          = (known after apply)
@@ -134,7 +134,7 @@ Terraform used the selected providers to generate the following execution plan. 
 
 Terraform will perform the following actions:
 
-  # google_bigquery_dataset.dataset will be created
+   google_bigquery_dataset.dataset will be created
   + resource "google_bigquery_dataset" "dataset" {
       + creation_time              = (known after apply)
       + dataset_id                 = "trips_data_all"
@@ -161,7 +161,7 @@ Terraform will perform the following actions:
         }
     }
 
-  # google_storage_bucket.data-lake-bucket will be created
+   google_storage_bucket.data-lake-bucket will be created
   + resource "google_storage_bucket" "data-lake-bucket" {
       + force_destroy               = true
       + id                          = (known after apply)
@@ -217,46 +217,5 @@ wget https://s3.amazonaws.com/nyc-tlc/trip+data/yellow_tripdata_2021-01.csv
 ```
 
 Download this data and put it to Postgres
-
-## Question 3. Count records 
-
-How many taxi trips were there on January 15?
-
-+ Answer = 53,024
-
-## Question 4. Average
-
-Find the largest tip for each day. 
-On which day it was the largest tip in January?
-
-(note: it's not a typo, it's "tip", not "trip")
-
-+ Answer 
- Date = 2021-01-20
- Value = 1140.44
- 
-
-## Question 5. Most popular destination
-
-What was the most popular destination for passengers picked up 
-in central park on January 14?
-
-Enter the district name (not id)
-
-+ Answer = Upper East Side South
-
-## Question 6. 
-
-What's the pickup-dropoff pair with the largest 
-average price for a ride (calculated based on `total_amount`)?
-
-+ Answer = Alphabet City / Unknown 
-
-
-## Submitting the solutions
-
-Form for sumitting (TBA)
-
-Deadline: 24 January, 17:00 CET
 
 
