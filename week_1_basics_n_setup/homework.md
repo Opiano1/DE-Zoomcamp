@@ -23,7 +23,12 @@ After that, run
 
 * `terraform init`
 
+
 + Answer
+
+Apply the plan and copy the output (after running `apply`) to the form.
+
+It should be the entire output - from the moment you typed `terraform init` to the very end.
 
 
 Initializing the backend...
@@ -218,4 +223,5 @@ wget https://s3.amazonaws.com/nyc-tlc/trip+data/yellow_tripdata_2021-01.csv
 
 Download this data and put it to Postgres
 
+Deadline: 26 January (Wednesday), 22:00 CET
 
